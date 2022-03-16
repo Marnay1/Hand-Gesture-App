@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="top">
+            <h1 id="header" class="header">Hand Gesture App</h1>
+            <span>&#128076;</span>
+            <span>&#128077;</span>
+            <span>&#128078;</span>
+            <span>&#9996;</span>
+            <span>&#9994;</span>
+        </div>
+        <h3>Use the following hand gestures that you see above.</h3>
+        <h3>Take a selfie of a hand gesture by pressing the Capture Image button and know the meaning behind it.</h3>
+        
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <br>
+            <label>Webcam -</label>
+            <div class="divs" id="webcam"></div>
+            <br>
+            <br>
+            <button class="button" onclick="capture()"> Capture Image</button>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <h3 class="predictions" id="prediction_1"> Prediction 1: </h3>
+            <br>
+            <h3 class="predictions" id="prediction_2"> Prediction 2: </h3>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+            <br>
+            <label>Webcam -</label>
+            <div class="divs" id="picture"></div>
+            <br>
+            <br>
+            <button class="button" onclick="identify()"> Identify Gesture</button>
+        </div>
+    </body>
+</html>

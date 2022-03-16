@@ -1,0 +1,29 @@
+body{
+    text-align: center;
+    background-color: lightskyblue;
+}
+#header{
+    color:indigo;
+}
+#top{
+    background-color: lightcoral;
+    margin-left: 100px;
+    margin-right: 100px;
+    letter-spacing: 5px;
+}
+span{
+    font-size: 30px;
+}
+.divs{
+    border: 3px dashed black;
+    width: 300px;
+    height: 300px;
+    margin-left: 100px;
+}
+.predictions{
+    background-color: lightpink;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.button{
+    background-color: lime;
+}

@@ -5,6 +5,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
         <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+        
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
@@ -22,7 +23,7 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <br>
             <label>Webcam -</label>
-            <div class="divs" id="webcam"></div>
+            <div class="divs" id="camera"></div>
             <br>
             <br>
             <button class="button" onclick="capture()"> Capture Image</button>
@@ -30,7 +31,15 @@
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <h3 class="predictions" id="prediction_1"> Prediction 1: </h3>
             <br>
+            <h4 id="meaning" class="predictions"></h4>
+            <br>
+            <span id="hand_gesture_emoji_1"></span>
+            <br>
             <h3 class="predictions" id="prediction_2"> Prediction 2: </h3>
+            <br>
+            <h4 id="meaning_2" class="predictions"></h4>
+            <br>
+            <span id="hand_gesture_emoji_2"></span>
         </div>
         <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
             <br>
@@ -41,4 +50,5 @@
             <button class="button" onclick="identify()"> Identify Gesture</button>
         </div>
     </body>
+    <script src="main.js"></script>
 </html>
